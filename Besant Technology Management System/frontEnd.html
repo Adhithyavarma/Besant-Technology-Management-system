@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>webpage</title>
+    <script src="https://kit.fontawesome.com/aa6cdb79a3.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+        .marquee {
+            padding: 3px 3px;
+            background-color: orange;
+            font-family: sans-serif;
+        }
+
+        .nav {
+            display: grid;
+            grid-template-columns: 80% 20%;
+            background-color: black;
+            font-family: 'Pacifico', cursive;
+            margin-top: 3px;
+            padding: 13px;
+
+        }
+
+        .nav .contact a {
+            text-decoration-line: none;
+            box-sizing: content-box;
+            color: white;
+        }
+
+        .nav .contact {
+            display: grid;
+            grid-template-columns: 30% 30% 30%;
+        }
+
+        .nav .fonts {
+            color: white;
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+
+        }
+
+        .nav .fonts a {
+            color: white;
+        }
+
+        .nav a:hover {
+            color: red;
+        }
+
+        .navbar {
+            display: grid;
+            grid-template-columns: 20% 70% 10%;
+            padding: 10px;
+            background-color: rgb(137, 196, 202);
+        }
+
+        .title h3 {
+            margin-left: 15px;
+            margin-top: 5px;
+            font-size: x-large;
+            color: rgb(2, 97, 56);
+        }
+
+        .address a {
+            text-decoration: none;
+            color: black;
+            box-sizing: border-box;
+            padding: 15px 15px;
+            margin: 0px 25px;
+            font-size: large;
+            font-weight: 400;
+            font-family: sans-serif;
+        }
+
+        .address {
+            padding: 10px;
+        }
+
+        .enq-btn button {
+            height: 30px;
+            width: 80px;
+            margin-left: 20px;
+            background-color: rgb(3, 163, 94);
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .address a:hover {
+            background-color: white;
+            color: red;
+            font-size: large;
+
+        }
+
+        .space {
+            padding-left: 60px;
+            padding-right: 60px;
+        }
+
+        .core h1 {
+            color: rgb(255, 153, 0);
+        }
+
+        .core {
+            text-align: center;
+        }
+
+        .core button {
+            margin: 5px 5px;
+        }
+
+        .btn1 {
+            height: 40px;
+            width: 80px;
+            color: white;
+            background-color: rgb(255, 153, 0);
+            border: none;
+            border-radius: 3px;
+            font-weight: bold;
+            font-size: medium;
+
+        }
+
+        .core .btn2 {
+            height: 30px;
+            width: 90px;
+            color: white;
+            background-color: rgba(5, 31, 103, 0.806);
+            border: none;
+            border-radius: 3px;
+            font-weight: bold;
+            font-size: medium;
+        }
+
+        .core .btn3 {
+            height: 30px;
+            width: 90px;
+            color: white;
+            background-color: rgba(5, 31, 103, 0.806);
+            border: none;
+            border-radius: 3px;
+            font-weight: bold;
+            font-size: medium;
+        }
+
+        .btn4 {
+            height: 40px;
+            width: 130px;
+            color: white;
+            background-color: rgb(255, 153, 0);
+            border: none;
+            border-radius: 3px;
+            font-size: medium;
+
+        }
+
+        .btn4 i {
+            font-weight: bolder;
+        }
+
+        .box1 {
+            padding: 15px 50px;
+            margin-top: 20px;
+            box-shadow: 5px 5px 5px 5px rgba(194, 192, 192, 0.3);
+
+        }
+
+        .box1 h4 {
+            text-align: center;
+            color: rgb(255, 153, 0);
+            font-weight: bold;
+        }
+
+        .box1 li {
+            margin-top: 5px;
+            color: rgb(61, 61, 61);
+            font-size: medium;
+            letter-spacing: 0.5px;
+        }
+
+        .box2 {
+            padding: 15px 50px;
+            margin-top: 20px;
+            box-shadow: 5px 5px 5px 5px rgba(194, 192, 192, 0.3);
+
+        }
+
+        .box2 h4 {
+            text-align: center;
+            color: rgb(255, 153, 0);
+            font-weight: bold;
+        }
+
+        .box2 h3 {
+            margin-top: 5px;
+            background-color: rgb(235, 253, 254);
+            color: rgba(5, 31, 103, 0.806);
+            padding: 5px 20px;
+            box-shadow: 2px 2px 4px 5px rgba(117, 117, 117, 0.3);
+        }
+
+        .box2 ul {
+            height: 100px;
+            overflow: auto;
+        }
+
+        .para {
+            display: none;
+        }
+
+        .box2 li {
+            margin-left: 30px;
+        }
+
+        .box1 p {
+            margin-top: 5px;
+            color: rgb(61, 61, 61);
+            font-size: medium;
+            letter-spacing: 0.5px;
+        }
+
+        .footer {
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+            background-color: rgb(235, 253, 254);
+            margin-top: 45px;
+            font-family: sans-serif;
+        }
+
+        .grad {
+            padding-left: 40px;
+        }
+
+        .grad h3 {
+            padding: 25px 0px;
+        }
+
+        .service {
+            padding-left: 45px;
+        }
+
+        .service h3 {
+            padding: 25px 0px;
+        }
+
+        .service p {
+            padding: 10px 0px;
+        }
+
+        .grad span {
+            font-weight: bold;
+        }
+
+        .mail {
+            padding-left: 40px;
+        }
+
+        .mail h3 {
+            padding: 25px 0px;
+        }
+
+        .mail input {
+            height: 30px;
+            width: 200px;
+        }
+
+        .mail button {
+            height: 40px;
+            width: 40px;
+            color: black;
+            background-color: rgb(3, 163, 94);
+            border: none;
+            border-radius: 8px;
+            margin-top: 15px;
+        }
+
+        .mail a {
+            text-decoration: none;
+            color: black;
+            font-size: larger;
+        }
+
+        #home {
+            font-size: larger;
+            font-weight: bolder;
+            border: none;
+            background-color: white;
+
+        }
+        .dropdown {
+         font-size: x-large;
+         background-color: white;
+         width: 150px;
+         position: absolute;
+         left: 580px;
+         bottom: 495px;
+         display: none;
+         z-index: 11;
+
+      }
+
+      .dropdown p {
+         padding: 8px;
+         font-family: sans-serif;
+         cursor: context-menu;
+      }
+
+      .dropdown p:hover {
+         background-color: rgb(26, 0, 0);
+         color: white;
+      }
+    </style>
+</head>
+
+<body>
+    <div class="marquee">
+        <marquee onmouseover="this.stop();" onmouseout="this.start();" behavior="alternate" direction="right">Our best
+            offer Ever!! Summer Special - Get 3 Courses at 22499/- only.<a href="#">Read More</a></marquee>
+    </div>
+    <div class="nav">
+        <div class="contact">
+            <a href="mailto:varmatechnology@gmail.com">Email: besanttechnology@gmail.com</a>
+            <a href="tel:+91 7010987235">Contact: +91 7010987235</a>
+        </div>
+        <div class="fonts">
+            <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://twitter.com/home" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
+            <a href="https://www.instagram.com/accounts/login/" target="_blank"><i
+                    class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/feed/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+    </div>
+    <div class="navbar">
+        <div class="title">
+            <h3> <i class="fa-solid fa-graduation-cap"></i> Besant Technology</h3>
+        </div>
+        <div class="address">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#" onmouseover="onn()" onmouseout="off()">Courses</a>
+            <a href="/Online Course.html">Online Training</a>
+            <a href="#">Contact</a>
+            <a href="/employeeLogin.html" target="_blank">Employee</a>
+        </div>
+        <div class="enq-btn">
+            <button id="enq" onmouseover="over()" onmouseout="out()">Enquiry</button>
+        </div>
+    </div>
+   
+    <div class="main">
+        
+        <div class="space">
+            <div class="core">
+                <div class="dropdown" id="dropdown" onmouseover="onn()" onmouseout="off()">
+                    <p onclick="array()">Front End</p>
+                    <p onclick="myFunction()">Backend</p>
+                 </div>
+                <h1>Front End Developer</h1>
+                <button class="btn1"><i class="fa-solid fa-user"></i>+Enroll</button>
+                <button class="btn2">Javascript</button>
+                <button class="btn3">ReactJS</button>
+                <button class="btn4"><i class="fa-solid fa-calendar-days"></i>&nbsp;View Batches</button>
+            </div>
+            <button id="home"><i style="color: rgb(76, 222, 247);"
+                    class="fa-solid fa-arrow-left"></i>&nbsp;&nbsp;&nbsp;&nbsp;<i style="color: rgb(82, 4, 4);"
+                    class="fa-solid fa-house"></i></button>
+            <div class="box1">
+                <h4>Who this course is for?</h4>
+                <ul>
+                    <li>Manual testers, Non-programming aware testers interested in learning Automation</li>
+                    <li>Any Software engineer who are interested in Mobile Technologies</li>
+                    <li>Freshers/ Undergraduates/ Graduates/ Software Testers</li>
+                </ul>
+            </div>
+            <div class="box1">
+                <h4>Why take this course?</h4>
+                <ul>
+                    <li>Working professionals who wants to upgrade their skills from manual testing.</li>
+                    <li>One who is willing to move into automation testing projects</li>
+                    <li>One who is working in automation and want to learn advance concepts for implementing in their
+                        projects.</li>
+                </ul>
+            </div>
+            <div class="box1">
+                <h4>What you will learn?</h4>
+                <ul>
+                    <li>Manual testers, Non-programming aware testers interested in learning Automation</li>
+                    <li>You will be able to handle real time challenges using Selenium</li>
+                    <li>Complete knowlwdge on Test NG, MAVEN, JENKINS</li>
+                    <li>You will improve ypur coding skills in writing best optimized code for Automating test cases
+                    </li>
+                    <li>In-depth understanding of real time Selenium CHALLENGES</li>
+                    <li>By the end of this course, You will be Mastered on Selenium Web driver with strong Core JAVA
+                        basics</li>
+                    <li>****** You need NOT have java coding experience to start this course. Even non Programming
+                        candidates can follow this course comfortably</li>
+                    <li>All Installation setup including Java knowledge is taken care as part of course</li>
+                    <li>100% JOB ASSISTANCE after completion of course to make your Profile reach to Hundreds of
+                        Recruiters i our network. ******</li>
+                </ul>
+            </div>
+            <div class="box2">
+                <h4>Course Content</h4>
+                <h3 class="head">HTML</h3>
+                <ul class="para">
+                    <p>
+                        <li>Manual testers, Non-programming aware testers interested in learning Automation</li>
+                        <li>You will be able to handle real time challenges using Selenium</li>
+                        <li>Complete knowlwdge on Test NG, MAVEN, JENKINS</li>
+                        <li>You will improve ypur coding skills in writing best optimized code for Automating test cases
+                        </li>
+                        <li>In-depth understanding of real time Selenium CHALLENGES</li>
+                        <li>By the end of this course, You will be Mastered on Selenium Web driver with strong Core JAVA
+                            basics</li>
+                        <li>****** You need NOT have java coding experience to start this course. Even non Programming
+                            candidates can follow this course comfortably</li>
+                        <li>All Installation setup including Java knowledge is taken care as part of course</li>
+                        <li>100% JOB ASSISTANCE after completion of course to make your Profile reach to Hundreds of
+                            Recruiters i our network. ******</li>
+
+                </ul>
+                <h3 class="head">CSS</h3>
+                <ul class="para">
+                    <p>
+                        <li>Manual testers, Non-programming aware testers interested in learning Automation</li>
+                        <li>You will be able to handle real time challenges using Selenium</li>
+                        <li>Complete knowlwdge on Test NG, MAVEN, JENKINS</li>
+                        <li>You will improve ypur coding skills in writing best optimized code for Automating test cases
+                        </li>
+                        <li>In-depth understanding of real time Selenium CHALLENGES</li>
+                        <li>By the end of this course, You will be Mastered on Selenium Web driver with strong Core JAVA
+                            basics</li>
+                        <li>****** You need NOT have java coding experience to start this course. Even non Programming
+                            candidates can follow this course comfortably</li>
+                        <li>All Installation setup including Java knowledge is taken care as part of course</li>
+                        <li>100% JOB ASSISTANCE after completion of course to make your Profile reach to Hundreds of
+                            Recruiters i our network. ******</li>
+
+                </ul>
+                <h3 class="head">Bootsrap</h3>
+                <ul class="para">
+                    <p>
+                        <li>Manual testers, Non-programming aware testers interested in learning Automation</li>
+                        <li>You will be able to handle real time challenges using Selenium</li>
+                        <li>Complete knowlwdge on Test NG, MAVEN, JENKINS</li>
+                        <li>You will improve ypur coding skills in writing best optimized code for Automating test cases
+                        </li>
+                        <li>In-depth understanding of real time Selenium CHALLENGES</li>
+                        <li>By the end of this course, You will be Mastered on Selenium Web driver with strong Core JAVA
+                            basics</li>
+                        <li>****** You need NOT have java coding experience to start this course. Even non Programming
+                            candidates can follow this course comfortably</li>
+                        <li>All Installation setup including Java knowledge is taken care as part of course</li>
+                        <li>100% JOB ASSISTANCE after completion of course to make your Profile reach to Hundreds of
+                            Recruiters i our network. ******</li>
+
+                </ul>
+
+
+                <h3 class="head">JavaScript</h3>
+                <ul class="para">
+                    <p>
+                        <li>Manual testers, Non-programming aware testers interested in learning Automation</li>
+                        <li>You will be able to handle real time challenges using Selenium</li>
+                        <li>Complete knowlwdge on Test NG, MAVEN, JENKINS</li>
+                        <li>You will improve ypur coding skills in writing best optimized code for Automating test cases
+                        </li>
+                        <li>In-depth understanding of real time Selenium CHALLENGES</li>
+                        <li>By the end of this course, You will be Mastered on Selenium Web driver with strong Core JAVA
+                            basics</li>
+                        <li>****** You need NOT have java coding experience to start this course. Even non Programming
+                            candidates can follow this course comfortably</li>
+                        <li>All Installation setup including Java knowledge is taken care as part of course</li>
+                        <li>100% JOB ASSISTANCE after completion of course to make your Profile reach to Hundreds of
+                            Recruiters i our network. ******</li>
+
+                </ul>
+                <h3 class="head">ReactJS</h3>
+                <ul class="para">
+                    <p>
+                        <li>Manual testers, Non-programming aware testers interested in learning Automation</li>
+                        <li>You will be able to handle real time challenges using Selenium</li>
+                        <li>Complete knowlwdge on Test NG, MAVEN, JENKINS</li>
+                        <li>You will improve ypur coding skills in writing best optimized code for Automating test cases
+                        </li>
+                        <li>In-depth understanding of real time Selenium CHALLENGES</li>
+                        <li>By the end of this course, You will be Mastered on Selenium Web driver with strong Core JAVA
+                            basics</li>
+                        <li>****** You need NOT have java coding experience to start this course. Even non Programming
+                            candidates can follow this course comfortably</li>
+                        <li>All Installation setup including Java knowledge is taken care as part of course</li>
+                        <li>100% JOB ASSISTANCE after completion of course to make your Profile reach to Hundreds of
+                            Recruiters i our network. ******</li>
+
+                </ul>
+
+            </div>
+
+            <div class="box1">
+                <h4>Description</h4>
+                <p>This course is designed for all manual testers who wants to upgrade their skills to automation.
+                    Course will be trained by top industry experts who have passion to train students and help then
+                    upgrade their skills level.</p>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="footer">
+        <div class="grad">
+            <h3> <i class="fa-solid fa-graduation-cap"></i> Besant Technology</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores expedita quos laborum repellendus
+                illo reprehenderit nemo, dolore quibusdam autem temporibus unde rerum nulla quae ex quasi saepe fugit?
+                Consequatur, voluptas?</p>
+        </div>
+        <div class="service">
+            <h3>Our Services</h3>
+            <p>Mobile Application Design</p>
+            <p>Web A pplication Design</p>
+            <p>Websites Design</p>
+            <p>Web User Interface Design</p>
+            <p>Web UX Design and Research</p>
+            <p>Theme Development Design</p>
+        </div>
+        <div class="grad">
+            <h3>Head Office</h3>
+            <p>1/2 Marathahalli, Bengaluru,</p>
+            <p>Karnataka-560037.</p>
+            <p>Phone: +91 7010987235</p>
+            <p>Email: varmatechnology@gmail.com</p>
+            <p><span>Office Time:</span>10.00AM - 6.00PM</p>
+        </div>
+        <div class="mail">
+            <h3>Subscribe Us</h3>
+            <input type="email">
+            <button><a
+                    href="https://mail.google.com/mail/u/0/?ogbl#sent/QgrcJHsbflCTTRSWnMRNXDNtTKhgWQLDWVv?compose=new"><i
+                        class="fa-solid fa-right-to-bracket"></i></a></button><br>
+            <button><a href="https://www.facebook.com/" target="_blank"><i
+                        class="fa-brands fa-facebook"></i></a></button>
+            <button> <a href="https://twitter.com/home" target="_blank"><i
+                        class="fa-brands fa-square-twitter"></i></a></button>
+            <button> <a href="https://www.instagram.com/accounts/login/" target="_blank"><i
+                        class="fa-brands fa-instagram"></i></a></button>
+            <button><a href="https://www.linkedin.com/feed/" target="_blank"><i
+                        class="fa-brands fa-linkedin"></i></a></button>
+
+        </div>
+
+    </div>
+    <script>
+
+
+        var x = document.getElementsByClassName("head")
+        for (let i = 0; i < x.length; i++) {
+            x[i].addEventListener("click", function () {
+                // this.classList.toggle("active")
+                var y = this.nextElementSibling
+
+                if (y.style.display === "block") {
+                    y.style.display = "none"
+                }
+                else {
+                    y.style.display = "block"
+                }
+            })
+        }
+        let d = document.getElementById("home")
+        d.addEventListener("click", () => {
+            window.location.href = "besant.html"
+        })
+
+        let courses = document.getElementById("dropdown")
+      function onn() {
+         courses.style.display = "block"
+      }
+      function off() {
+         courses.style.display = "none"
+      }
+
+        function myFunction() {
+         location.href = "BackEnd.html"
+      }
+      function array() {
+         location.href = "frontEnd.html"
+      }
+    </script>
+</body>
+
+</html>

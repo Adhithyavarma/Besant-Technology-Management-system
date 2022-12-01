@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Login</title>
+    <script src="https://kit.fontawesome.com/aa6cdb79a3.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            padding: 0%;
+            margin: 0%;
+            font-family: sans-serif;
+
+        }
+
+        .nav {
+            background-color: red;
+            padding: 10px 50px;
+            color: white;
+            position: sticky;
+        }
+
+        .login {
+            height: 220px;
+            width: 300px;
+            margin-left: 600px;
+            padding: 20px;
+            margin-top: 100px;
+            color: rgb(66, 66, 66);
+            border: 2px solid lightgray;
+            background-color: rgb(255, 246, 246);
+            border-radius: 5px;
+        }
+
+        .details {
+            padding: 10px;
+        }
+
+        .details input {
+            height: 26px;
+            width: 200px;
+            padding-left: 10px;
+        }
+
+        .details button {
+            position: relative;
+            left: 5px;
+            height: 30px;
+            width: 25px;
+            color: rgb(109, 109, 109);
+
+        }
+
+        #btn {
+            text-align: right;
+        }
+
+        #btn input {
+            border: none;
+            padding: 3px 8px;
+            color: rgb(250, 248, 248);
+            background-color: rgb(160, 206, 23);
+        }
+
+        .footer {
+            background-color: black;
+            color: white;
+            padding: 20px 50px;
+            margin-top: 220px;
+            position: sticky;
+        }
+
+        #error {
+            color: red;
+            font-size: xx-small;
+        }
+
+        #home {
+            font-size: larger;
+            font-weight: bolder;
+            border: none;
+            background-color: white;
+            margin: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <h1>Besant Technology</h1>
+
+    </div>
+    <!-- <button id="home"><i style="color: rgb(76, 222, 247);" class="fa-solid fa-arrow-left"></i>&nbsp;&nbsp;&nbsp;&nbsp;<i
+            style="color: rgb(82, 4, 4);" class="fa-solid fa-house"></i></button> -->
+
+    <div class="login">
+
+        <h2>Admin Login Area</h2><br>
+        <p>Please provide your Details</p>
+        <form onsubmit="form(event)">
+            <div class="details">
+                <!-- <span id="error"></span> -->
+                <button><i class="fa-solid fa-user"></i></button>
+                <input type="text" id="name" name="name" placeholder="username" required>
+            </div>
+            <div class="details">
+                <!-- <span id="error"></span> -->
+                <button><i class="fa-solid fa-key"></i></button>
+                <input type="password" id="password" name="password" placeholder="password" required>
+            </div><br>
+            <div id="btn">
+                <input type="submit" value="Login">
+            </div>
+        </form>
+
+    </div>
+    <div class="footer">
+        <p>&copy; Besant Technology</p>
+
+    </div>
+    <script>
+
+
+        function form(event) {
+            event.preventDefault();
+            var a = document.getElementById("name").value
+            // var b = document.getElementById("password").value
+            // var c = document.getElementById("error").innerHTML
+
+            if (a.length < 5) {
+                alert("name should be greater than five letters")
+            }
+            else {
+
+                alert("Submitted successfully")
+                link()
+            }
+
+        }
+        function link() {
+            window.location.href = "besant.html"
+        }
+
+        // let d = document.getElementById("home")
+        // d.addEventListener("click", () => {
+        //     window.location.href = "besant.html"
+        // })
+    </script>
+
+
+</body>
+
+</html>

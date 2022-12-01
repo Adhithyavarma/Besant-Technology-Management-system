@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <title>Beasnt technology Enquiry Management system</title>
+
+   <script src="https://kit.fontawesome.com/aa6cdb79a3.js" crossorigin="anonymous"></script>
+
+   <style>
+      * {
+         padding: 0%;
+         margin: 0%;
+
+      }
+
+      .marquee {
+         padding: 3px 3px;
+         background-color: orange;
+         font-family: sans-serif;
+      }
+
+      .nav {
+         display: grid;
+         grid-template-columns: 80% 20%;
+         background-color: black;
+         font-family: 'Pacifico', cursive;
+         margin-top: 3px;
+         padding: 13px;
+
+      }
+
+      .nav .contact a {
+         text-decoration-line: none;
+         box-sizing: content-box;
+         color: white;
+      }
+
+      .nav .contact {
+         display: grid;
+         grid-template-columns: 30% 30% 30%;
+      }
+
+      .nav .fonts {
+         color: white;
+         display: grid;
+         grid-template-columns: 25% 25% 25% 25%;
+
+      }
+
+      .nav .fonts a {
+         color: white;
+      }
+
+      .nav a:hover {
+         color: red;
+      }
+
+      .navbar {
+         display: grid;
+         grid-template-columns: 20% 70% 10%;
+         padding: 10px;
+         background-color: rgb(137, 196, 202);
+      }
+
+      .title h3 {
+         margin-left: 15px;
+         margin-top: 5px;
+         font-size: x-large;
+         color: rgb(2, 97, 56);
+      }
+
+      .address a {
+         text-decoration: none;
+         color: black;
+         box-sizing: border-box;
+         padding: 15px 15px;
+         margin: 0px 25px;
+         font-size: large;
+         font-weight: 400;
+         font-family: sans-serif;
+      }
+
+      .address {
+         padding: 10px;
+      }
+
+      .enq-btn button {
+         height: 30px;
+         width: 80px;
+         margin-left: 20px;
+         background-color: rgb(3, 163, 94);
+         border: none;
+         border-radius: 5px;
+         font-weight: bold;
+         color: white;
+      }
+
+      .address a:hover {
+         background-color: white;
+         color: red;
+         font-size: large;
+
+      }
+
+      .bgi {
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: cover;
+         width: 1519px;
+         height: 600px;
+         position: relative;
+         animation: image 20s infinite alternate;
+      }
+
+      @keyframes image {
+         0% {
+            background-image: url("/images/imgonline-com-ua-resize-7QAOCB80EB0s8Df.jpg");
+         }
+         20% {
+            background-image: url("/images/imgonline-com-ua-resize-KHgu5v2TN1Rg.jpg");
+         }
+
+         40% {
+            background-image: url("/images/imgonline-com-ua-resize-NT3LsWpCk83e.jpg");
+         }
+
+         60% {
+            background-image: url("/images/imgonline-com-ua-resize-x9ARyql0kCoYO.jpg");
+         }
+
+         80% {
+            background-image: url("/images/imgonline-com-ua-resize-qED89B7b3K.jpg");
+         }
+
+         100% {
+            background-image: url("/images/imgonline-com-ua-resize-wQwIjDE1TudsN.jpg");
+         }
+      }
+
+      .cont {
+         padding-top: 140px;
+         margin-left: 140px;
+         height: 350px;
+         width: 520px;
+         color: white;
+         font-family: sans-serif;
+
+      }
+
+      .cont h1 {
+         font-size: xx-large;
+         font-weight: bolder;
+      }
+
+      .cont h4 {
+         font-size: larger;
+         font-weight: bolder;
+         margin-top: 10px;
+      }
+
+      .cont p {
+         margin-top: 25px;
+         font-size: medium;
+      }
+
+      .cont button {
+         background-color: rgb(3, 163, 94);
+         font-size: medium;
+         font-weight: bold;
+         color: rgb(255, 255, 255);
+         padding: 10px 15px;
+         border: 0ch;
+         border-radius: 4px;
+         margin-top: 40px;
+      }
+
+      .cont button:hover {
+         color: red;
+      }
+
+      .key {
+         text-align: center;
+         padding: 40px;
+      }
+
+      .key p {
+         margin-top: 15px;
+      }
+
+      .k-features {
+         display: grid;
+         grid-template-columns: 22% 22% 22% 22%;
+         grid-gap: 3%;
+         padding-left: 40px;
+      }
+
+      .k1 {
+         height: 200px;
+         background-color: rgb(3, 163, 94);
+         border-radius: 10px;
+         text-align: center;
+         margin-top: 25px;
+         padding: 0px 20px;
+         color: white;
+         box-shadow: 2px 2px 2px 5px rgb(230, 229, 229);
+      }
+
+      .kbtn {
+         height: 80px;
+         width: 80px;
+         border-radius: 40px;
+         border: none;
+         position: relative;
+         bottom: 40px;
+         font-size: large;
+         font-weight: bold;
+         box-sizing: border-box;
+      }
+
+      .k1 h4 {
+         position: relative;
+         bottom: 30px;
+      }
+
+      .k1 p {
+         position: relative;
+         bottom: 20px;
+         padding-left: 20px;
+         padding-right: 20px;
+
+      }
+
+      .k1:hover {
+         background-color: white;
+         color: black;
+      }
+
+      .course {
+         display: grid;
+         grid-template-columns: 30% 30% 30%;
+         grid-gap: 3%;
+         text-align: center;
+         padding-left: 30px;
+         font-family: sans-serif;
+      }
+
+      .c-sub1 {
+         margin-top: 30px;
+      }
+
+      .c-sub1 h3 {
+         background-color: rgb(6, 255, 118);
+         padding: 10px;
+         font-weight: bold;
+         color: white;
+      }
+
+      .c-sub2 {
+         padding: 20px 15px;
+         box-shadow: 3px 3px 3px 4px rgb(190, 242, 254);
+         height: 230px;
+      }
+
+      .c-sub2 p {
+         margin-top: 20px;
+      }
+
+      .c-sub2 button {
+         background-color: rgb(3, 163, 94);
+         padding: 5px 8px;
+         margin-top: 40px;
+         border: none;
+         font-weight: bold;
+         color: white;
+      }
+
+      .c-sub2 button:hover {
+         color: tomato;
+         background-color: gold;
+         text-decoration: none;
+      }
+
+      .c-sub2 p:nth-child(2) {
+         color: rgb(255, 255, 0);
+      }
+
+      .c-sub2 p:nth-child(3) {
+         color: rgb(83, 84, 84);
+      }
+
+      .footer {
+         display: grid;
+         grid-template-columns: 25% 25% 25% 25%;
+         background-color: rgb(235, 253, 254);
+         margin-top: 45px;
+         font-family: sans-serif;
+      }
+
+      .grad {
+         padding-left: 40px;
+      }
+
+      .grad h3 {
+         padding: 25px 0px;
+      }
+
+      .service {
+         padding-left: 45px;
+      }
+
+      .service h3 {
+         padding: 25px 0px;
+      }
+
+      .service p {
+         padding: 10px 0px;
+      }
+
+      .grad span {
+         font-weight: bold;
+      }
+
+      .mail {
+         padding-left: 40px;
+      }
+
+      .mail h3 {
+         padding: 25px 0px;
+      }
+
+      .mail input {
+         height: 30px;
+         width: 200px;
+      }
+
+      .mail button {
+         height: 40px;
+         width: 40px;
+         color: black;
+         background-color: rgb(3, 163, 94);
+         border: none;
+         border-radius: 8px;
+         margin-top: 15px;
+      }
+
+      .mail a {
+         text-decoration: none;
+         color: black;
+         font-size: larger;
+      }
+
+      .apply {
+         height: 400px;
+         width: 300px;
+         background-color: rgb(255, 255, 255);
+         position: absolute;
+         bottom: 50px;
+         left: 600px;
+         border-radius: 10px;
+         display: none;
+      }
+
+      .apply-close {
+         text-align: right;
+         color: red;
+         cursor: pointer;
+      }
+
+      .apply-content {
+         text-align: center;
+         line-height: 50px;
+      }
+
+      .apply-content input {
+         border: none;
+         border-bottom: 1px solid brown;
+         padding: 10px 10px;
+      }
+
+      .apply-content textarea {
+         border: none;
+         border-bottom: 1px solid brown;
+         padding: 10px 10px;
+      }
+
+      .apply-content button {
+         background-color: blue;
+         padding: 7px 20px;
+         border: none;
+         color: white;
+      }
+
+      .enquiry {
+         height: 500px;
+         width: 400px;
+         background-color: rgb(255, 249, 249);
+         position: absolute;
+         bottom: 100px;
+         left: 71%;
+         text-align: center;
+         font-family: sans-serif;
+         border-radius: 8px;
+         display: none;
+      }
+
+      .enquiry p {
+         font-size: 22px;
+         font-weight: 200;
+         margin-top: 15px;
+         color: rgb(0, 0, 0);
+      }
+
+      .enquiry h2 {
+         background-color: rgb(4, 179, 248);
+         padding: 10px 10px;
+         margin: 0px 20px;
+      }
+
+      .enquiry input {
+         margin-top: 25px;
+         height: 30px;
+         width: 300px;
+         padding-left: 10px;
+         font-size: 15px;
+      }
+
+      .select {
+         padding: 8px 190px 8px 10px;
+         margin-top: 25px;
+         font-size: 15px;
+         border-bottom: 3px solid rgb(4, 179, 248);
+      }
+
+      .enquiry button {
+         padding: 13px 100px;
+         margin-top: 25px;
+         background-color: rgb(4, 179, 248);
+         border: 3px solid black;
+         border-radius: 10px;
+         font-weight: bold;
+      }
+
+      .dropdown {
+         font-size: x-large;
+         background-color: white;
+         width: 150px;
+         position: absolute;
+         left: 580px;
+         bottom: 518px;
+         display: none;
+      }
+
+      .dropdown p {
+         padding: 8px;
+         font-family: sans-serif;
+         cursor: context-menu;
+      }
+
+      .dropdown p:hover {
+         background-color: rgb(26, 0, 0);
+         color: white;
+      }
+   </style>
+
+</head>
+
+<body>
+   <div class="marquee">
+      <marquee onmouseover="this.stop();" onmouseout="this.start();" behavior="alternate" direction="right">Our best
+         offer Ever!! Summer Special - Get 3 Courses at 22499/- only.<a href="#">Read More</a></marquee>
+   </div>
+   <div class="nav">
+      <div class="contact">
+         <a href="mailto:varmatechnology@gmail.com">Email: varmatechnology@gmail.com</a>
+         <a href="tel:+91 7010987235">Contact: +91 7010987235</a>
+      </div>
+      <div class="fonts">
+         <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+         <a href="https://twitter.com/home" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
+         <a href="https://www.instagram.com/accounts/login/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+         <a href="https://www.linkedin.com/feed/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+   </div>
+   <div class="navbar">
+      <div class="title">
+         <h3> <i class="fa-solid fa-graduation-cap"></i> Besant Technology</h3>
+      </div>
+      <div class="address">
+         <a href="#">Home</a>
+         <a href="#">About</a>
+         <a href="#" onmouseover="onn()" onmouseout="off()">Courses</a>
+         <a href="Online Course.html">Online Training</a>
+         <a href=".footer" target="_self">Contact</a>
+         <a href="/crud.html" target="_blank">Employee</a>
+      </div>
+      <div class="enq-btn">
+         <button id="enq" onmouseover="over()" onmouseout="out()">Enquiry</button>
+      </div>
+   </div>
+   <div class="bgi">
+
+      <div class="dropdown" id="dropdown" onmouseover="onn()" onmouseout="off()">
+         <p onclick="array()">Front End</p>
+         <p onclick="myFunction()">Backend</p>
+      </div>
+      <div class="cont">
+         <h1>Besant Techonologies</h1>
+         <h4>Beast Online & Classroom Training Institute</h4>
+         <p><i>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta voluptas a quod obcaecati totam sed illum
+               aut magni! Autem modi ad, nulla perspiciatis quos maiores velit laboriosam? Qui voluptatum expedita
+               nesciunt dignissimos eos delectus sequi, dolore neque repudiandae et ea.</i></p>
+         <button id="cont-button">Apply Online</button>
+      </div>
+      <div class="apply" id="apply">
+         <div class="apply-close" id="apply-close">
+            <h4>✕</h4>
+         </div>
+         <div class="apply-content">
+            <h4>Quick Entry</h4>
+            <input type="text" placeholder="Name*" required>
+            <input type="text" placeholder="10 Digit Mobile No*">
+            <input type="email" placeholder="Email*">
+            <textarea></textarea>
+            <button>I'm Intrested Tell me More</button>
+         </div>
+      </div>
+      <div class="enquiry" id="enquiry" onmouseover="over()" onmouseout="out()">
+         <p>Request for<br>Class Room & Online Training Quotation
+         <p>
+         <h2><i class="fa-solid fa-house"></i>&nbsp;&nbsp;&nbsp;Classroom&nbsp;&nbsp;&nbsp;<i
+               class="fa-solid fa-laptop"></i>&nbsp;&nbsp;&nbsp;Online</h2>
+         <input type="text" placeholder="Enter Your Name" required>
+         <input type="email" placeholder="Enter Your Email" required>
+         <input type="text" placeholder="Enter Your Mobile No." required>
+         <select class="select">
+            <option value="Select Course">Select Course</option>
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+            <option value="Java Script">Java Script</option>
+            <option value="React JS">React JS</option>
+         </select>
+         <button>Submit Query</button>
+      </div>
+   </div>
+   <div class="key">
+      <h1>Key Features</h1>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate inventore, facilis explicabo excepturi
+         voluptatibus voluptates beatae repudiandae error doloremque maxime, harum quasi! Iste, cum commodi.</p>
+   </div>
+   <div class="k-features">
+      <div class="k1">
+         <button class="kbtn"><i class="fa-solid fa-file-word"></i></button>
+         <h4>Expert Faculty</h4>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, aperiam?</p>
+
+      </div>
+      <div class="k1">
+         <button class="kbtn"><i class="fa-regular fa-clock"></i></button>
+         <h4>Well Equipped Labs</h4>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, aperiam?</p>
+      </div>
+      <div class="k1">
+         <button class="kbtn">
+            <i class="fa-solid fa-building-columns"></i></button>
+         <h4>Quality Education</h4>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, aperiam?</p>
+
+      </div>
+      <div class="k1">
+         <button class="kbtn">
+            <i class="fa-solid fa-square-phone"></i>
+         </button>
+         <h4>24 * 7 Access</h4>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, aperiam?</p>
+      </div>
+   </div>
+   <div class="key">
+      <h1>Our Courses</h1>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate inventore, facilis explicabo excepturi
+         voluptatibus voluptates beatae repudiandae error doloremque maxime, harum quasi! Iste, cum commodi.</p>
+   </div>
+   <div class="course">
+      <div class="c-sub1">
+         <h3>Full Stack Development</h3>
+         <div class="c-sub2">
+            <h4>Cras ultricies lacus consectetur, consectetur</h4>
+            <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                  class="fa-solid fa-star"></i></p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus in et ipsam est tempora earum!</p>
+            <button onclick="myFunc()">Apply Online</button>
+         </div>
+      </div>
+
+      <div class="c-sub1">
+         <h3>Front End Development</h3>
+         <div class="c-sub2">
+            <h4>Cras ultricies lacus consectetur, consectetur</h4>
+            <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                  class="fa-solid fa-star"></i></p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus in et ipsam est tempora earum!</p>
+            <button onclick="myFunc()">Apply Online</button>
+         </div>
+      </div>
+      <div class="c-sub1">
+         <h3>Backend Development</h3>
+         <div class="c-sub2">
+            <h4>Cras ultricies lacus consectetur, consectetur</h4>
+            <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                  class="fa-solid fa-star"></i></p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus in et ipsam est tempora earum!</p>
+            <button onclick="myFunc()">Apply Online</button>
+         </div>
+      </div>
+   </div>
+   <div class="course">
+      <div class="c-sub1">
+         <h3>Data Science</h3>
+         <div class="c-sub2">
+            <h4>Cras ultricies lacus consectetur, consectetur</h4>
+            <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                  class="fa-solid fa-star"></i></p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus in et ipsam est tempora earum!</p>
+            <button onclick="myFunc()">Apply Online</button>
+         </div>
+      </div>
+
+      <div class="c-sub1">
+         <h3>AWS</h3>
+         <div class="c-sub2">
+            <h4>Cras ultricies lacus consectetur, consectetur</h4>
+            <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                  class="fa-solid fa-star"></i></p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus in et ipsam est tempora earum!</p>
+            <button onclick="myFunc()">Apply Online</button>
+         </div>
+      </div>
+      <div class="c-sub1">
+         <h3>Devops</h3>
+         <div class="c-sub2">
+            <h4>Cras ultricies lacus consectetur, consectetur</h4>
+            <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                  class="fa-solid fa-star"></i></p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus in et ipsam est tempora earum!</p>
+            <button onclick="myFunc()">Apply Online</button>
+         </div>
+      </div>
+   </div>
+   <div class="footer">
+      <div class="grad">
+         <h3> <i class="fa-solid fa-graduation-cap"></i> Varma Technology</h3>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores expedita quos laborum repellendus illo
+            reprehenderit nemo, dolore quibusdam autem temporibus unde rerum nulla quae ex quasi saepe fugit?
+            Consequatur, voluptas?</p>
+      </div>
+      <div class="service">
+         <h3>Our Services</h3>
+         <p>Mobile Application Design</p>
+         <p>Web A pplication Design</p>
+         <p>Websites Design</p>
+         <p>Web User Interface Design</p>
+         <p>Web UX Design and Research</p>
+         <p>Theme Development Design</p>
+      </div>
+      <div class="grad">
+         <h3>Head Office</h3>
+         <p>1/2 Marathahalli, Bengaluru,</p>
+         <p>Karnataka-560037.</p>
+         <p>Phone: +91 7010987235</p>
+         <p>Email: varmatechnology@gmail.com</p>
+         <p><span>Office Time:</span>10.00AM - 6.00PM</p>
+      </div>
+      <div class="mail">
+         <h3>Subscribe Us</h3>
+         <input type="email">
+         <button><a
+               href="https://mail.google.com/mail/u/0/?ogbl#sent/QgrcJHsbflCTTRSWnMRNXDNtTKhgWQLDWVv?compose=new"><i
+                  class="fa-solid fa-right-to-bracket"></i></a></button><br>
+         <button><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a></button>
+         <button> <a href="https://twitter.com/home" target="_blank"><i
+                  class="fa-brands fa-square-twitter"></i></a></button>
+         <button> <a href="https://www.instagram.com/accounts/login/" target="_blank"><i
+                  class="fa-brands fa-instagram"></i></a></button>
+         <button><a href="https://www.linkedin.com/feed/" target="_blank"><i
+                  class="fa-brands fa-linkedin"></i></a></button>
+
+      </div>
+
+   </div>
+   <script>
+      let conBtn = document.getElementById("cont-button")
+      let Applycls = document.getElementById("apply-close")
+      let applyBtn = document.getElementById("apply")
+      conBtn.onclick = function open() {
+         applyBtn.style.display = "block";
+      }
+      Applycls.onclick = function close() {
+         applyBtn.style.display = "none";
+      }
+
+      let enqBtn = document.getElementById("enquiry")
+      function over() {
+         enqBtn.style.display = "block"
+      }
+      function out() {
+         enqBtn.style.display = "none"
+      }
+      let courses = document.getElementById("dropdown")
+      function onn() {
+         courses.style.display = "block"
+      }
+      function off() {
+         courses.style.display = "none"
+      }
+
+
+
+      function myFunction() {
+         location.href = "BackEnd.html"
+      }
+      function array() {
+         location.href = "frontEnd.html"
+      }
+
+      function myFunc() {
+         location.href = "submit.html"
+      }
+   </script>
+</body>
+
+</html>

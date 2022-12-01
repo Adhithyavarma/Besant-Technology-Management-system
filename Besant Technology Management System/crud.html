@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/aa6cdb79a3.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: sans-serif;
+        }
+
+        .nav {
+            background-color: rgb(223, 32, 80);
+            display: grid;
+            grid-template-columns: 70% 30%;
+            position: sticky;
+            width: 100%;
+        }
+
+        .nav h1 {
+            color: white;
+            padding: 10px 50px;
+        }
+
+        .search {
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+
+        .search h4 {
+            margin-top: 17px;
+            color: white;
+        }
+
+        .search input {
+            height: 25px;
+            width: 200px;
+            margin-top: 15px;
+            border-radius: 30px;
+            padding-left: 8px;
+            background-color: black;
+            border: none;
+            font-weight: bold;
+        }
+
+        .tools {
+            position: sticky;
+            margin: auto;
+            max-width: 1000px;
+            text-align: center;
+            display: grid;
+            text-align: center;
+            grid-template-columns: 10% 10% 10% 13% 13% 12% 10% 10% 10%;
+        }
+
+        .tools a {
+            text-decoration: none;
+            color: rgb(60, 60, 60);
+            padding: 10px 0;
+            border: 1px solid lightgray;
+        }
+
+        .tools a:hover {
+            font-weight: bolder;
+        }
+
+        .form {
+            margin-left: 450px;
+            margin-top: 50px;
+            background-color: antiquewhite;
+            height: 500px;
+            width: 600px;
+            /* none */
+            display: none;
+        }
+
+        .min-nav {
+            background-color: black;
+            color: white;
+            padding: 10px 25px;
+            display: grid;
+            grid-template-columns: 80% 20%;
+        }
+
+        .form1 {
+            padding: 25px 25px;
+        }
+
+        .form1 input {
+            width: 250px;
+            height: 20px;
+            border-radius: 5px;
+        }
+
+        .form2 {
+            padding-left: 25px;
+
+        }
+
+        .form2 input:last-child {
+            height: 30px;
+            width: 70px;
+            margin-left: 250px;
+            background-color: tomato;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+
+        .footer {
+            margin-top: 290px;
+            width: 100%;
+            background-color: black;
+            color: white;
+            padding: 20px;
+            position: sticky;
+            position: fixed;
+            bottom: 0;
+        }
+
+        #delete1 {
+            /* none */
+            display: none;
+            border-collapse: collapse;
+            border: 1px solid lightblue;
+            margin: auto;
+            width: 100%;
+
+
+        }
+
+        .form1 span {
+            color: red;
+        }
+
+        #delete1 th {
+            border: 1px solid lightblue;
+            border-collapse: collapse;
+            text-align: center;
+            padding: 10px 70px;
+        }
+
+        #delete1 td {
+            border: 1px solid lightblue;
+            border-collapse: collapse;
+            text-align: center;
+            padding: 10px;
+        }
+
+        #delete1 button {
+            color: white;
+            border: none;
+            background-color: red;
+            border-radius: 4px;
+        }
+
+        .navigation {
+            width: 95%;
+            background-color: black;
+            color: white;
+            margin-top: 50px;
+            padding: 10px 25px;
+            cursor: default;
+            display: grid;
+            grid-template-columns: 40% 20% 40%;
+        }
+
+        .file {
+            height: 150px;
+            width: 600px;
+            border: 1px solid lightgrey;
+            margin: auto;
+            margin-top: 40px;
+            margin-top: 100px;
+        }
+
+        .file h2 {
+            background-color: rgb(54, 53, 53);
+            color: white;
+            padding: 10px 25px;
+        }
+
+        .icons {
+            text-align: center;
+            display: grid;
+            grid-template-columns: 23% 23% 27% 23%;
+
+        }
+
+        .icons a {
+            text-decoration: none;
+            color: rgb(54, 53, 53);
+            font-size: larger;
+            font-weight: 400;
+            padding: 5px 0;
+            background-color: antiquewhite;
+            margin-left: 14px;
+            margin-top: 15px;
+        }
+
+        #home {
+            font-size: larger;
+            font-weight: bolder;
+            border: none;
+            background-color: white;
+            margin-left: 30px;
+            float: left;
+        }
+
+        .edit {
+            color: red;
+        }
+
+        .bin {
+            color: rgb(45, 45, 254);
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="nav">
+        <h1><i class="fa-solid fa-graduation-cap"></i>&nbsp;&nbsp;Besant Technology</h1>
+        <div class="search">
+            <input type="text" placeholder="Search">
+            <h4><i class="fa-solid fa-user"></i>&nbsp;Admin&nbsp;<i class="fa-sharp fa-solid fa-chevron-down"></i></h4>
+
+        </div>
+    </div>
+
+    <div class="tools">
+        <a href="#"><i class="fa-solid fa-gauge"></i><br>Dashboard</a>
+        <a href="#"><i class="fa-solid fa-bullhorn"></i><br>Branch</a>
+        <a href="#"><i class="fa-solid fa-user"></i><br>Employee</a>
+        <a href="#"><i class="fa-sharp fa-solid fa-server"></i><br>Employee Roles</a>
+        <a href="#"><i class="fa-solid fa-wifi"></i><br>Enquiry Source</a>
+        <a href="#"><i class="fa-solid fa-check"></i><br>Enquiry Status</a>
+        <a href="#"><i class="fa-solid fa-users"></i><br>Customer</a>
+        <a href="#">&lt;/&gt;<br>Followups</a>
+        <a href="#"><i class="fa-solid fa-user-slash"></i><br>Report</a>
+
+
+    </div>
+    <button id="home"><i style="color: rgb(76, 222, 247);" class="fa-solid fa-arrow-left"></i>&nbsp;&nbsp;&nbsp;&nbsp;<i
+            style="color: rgb(82, 4, 4);" class="fa-solid fa-user"></i></button>
+    <div id="file" class="file">
+        <h2><i class="fa-solid fa-bookmark"></i> Importanr Shortcut</h2>
+        <div class="icons">
+            <a onclick="myFunc()" href="#"><i class="fa-solid fa-file-lines"></i><br> Employee</a>
+            <a href="#"><i class="fa-solid fa-bookmark"></i><br> Customer</a>
+            <a href="#"><i class="fa-solid fa-signal"></i><br> Employee roles</a>
+            <a href="#"><i class="fa-sharp fa-solid fa-comment"></i><br> Followups</a>
+
+        </div>
+    </div>
+    <div id="form" class="form">
+        <div class="min-nav">
+            <h3><i class="fa-sharp fa-solid fa-server"></i>&nbsp;&nbsp;Edit Employee Details</h3>
+            <h3 onclick="backFunc2()">&lt;&lt;Back</h3>
+        </div>
+        <form autocomplete="on" onsubmit="formSubmit()">
+            <div class="form1">
+                <label>Full Name
+                    <span>*</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    :</label>
+                <input type="text" id="name" name="name" required><br><br>
+                <label>Phone Number <span>*</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</label>
+                <input type="tel" id="number" name="number" required><br><br>
+                <label>Email
+                    <span>*</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    :</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <label>Permanent Address <span>*</span> :</label>
+                <input type="text" id="address" name="address" required><br><br>
+                <label>Aaadhar<span>*</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    :</label>
+                <input type="text" id="aadhar" name="aadhar" required> <br><br>
+                <label>Employee Role</label> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:
+                <select>
+                    <option value="">--Select--</option>
+                    <option>Manager</option>
+                    <option>Asst. Manager</option>
+                    <option>System Manager</option>
+                </select><br><br>
+                <label>Branch</label>&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:
+                <select>
+                    <option value="">--Select--</option>
+                    <option value="Bengaluru">Bengaluru</option>
+                    <option value="Chennai">Chennai</option>
+                    <option value="Hydrabad">Hydrabad</option>
+                    <option value="Mumbai">Mumbai</option>
+                </select><br><br>
+                <label>Password</label>
+                <span>*</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                :
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form2">
+                <input type="checkbox" required>
+                <label>Agree&nbsp;&nbsp;&nbsp;</label><br><br>
+                <input type="submit" name="submit" value="Submit">
+
+            </div>
+
+        </form>
+    </div>
+
+    <div id="delete1">
+        <table id="delete">
+            <div class="navigation">
+                <h3><i class="fa-sharp fa-solid fa-server"></i>&nbsp;&nbsp;Employee Management</h3>
+                <button onclick="myFunction()">Add Employee</button>
+                <h4 ondblclick="backFunc1()" style="text-align: right;">&lt;&lt;Back</h4>
+            </div>
+            <thead>
+                <tr>
+                    <th>Full Name</th>
+                    <th>Phone Number</th>
+                    <th>Email</th>
+                    <th>Permanent Address</th>
+                    <th>Aadhar</th>
+                    <th>Password</th>
+                    <th>Edit</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+
+    </div>
+
+
+
+
+    <div id="footer" class="footer">
+        <p>&copy;Besant Technology</p>
+    </div>
+
+
+
+    <script>
+        var selectedRow = null;
+        function formSubmit() {
+            event.preventDefault()
+            let x = readForm()
+            if (selectedRow === null) {
+                insertRow(x)
+            }
+            else {
+                onUpdate(x)
+            }
+
+
+            clearForm()
+        }
+        function readForm() {
+            var FormData = {}
+            FormData["name"] = document.getElementById("name").value
+            FormData["number"] = document.getElementById("number").value
+            FormData["email"] = document.getElementById("email").value
+            FormData["address"] = document.getElementById("address").value
+            FormData["aadhar"] = document.getElementById("aadhar").value
+            FormData["password"] = document.getElementById("password").valuez
+            return FormData
+
+        }
+        function insertRow(data) {
+            let table = document.getElementsByTagName("tbody")[0]
+            let row = table.insertRow(table.length)
+
+
+            cell1 = row.insertCell(0)
+            cell1.innerHTML = data.name
+
+
+            cell2 = row.insertCell(1)
+            cell2.innerHTML = data.number
+
+            cell3 = row.insertCell(2)
+            cell3.innerHTML = data.email
+
+            cell4 = row.insertCell(3)
+            cell4.innerHTML = data.address
+
+            cell5 = row.insertCell(4)
+            cell5.innerHTML = data.aadhar
+
+            cell6 = row.insertCell(5)
+            cell6.innerHTML = data.password
+
+            cell7 = row.insertCell(6)
+            cell7.innerHTML = `<a class="edit" onClick="onEdit(this)"><i class="bin" class="fa-solid fa-pen-to-square"></i></a>  <a onClick="onClose(this)"><i class="fa-solid fa-trash"></i></a>`
+        }
+
+        function clearForm() {
+            document.getElementById("name").value = ""
+            document.getElementById("number").value = ""
+            document.getElementById("email").value = ""
+            document.getElementById("address").value = ""
+            document.getElementById("aadhar").value = ""
+            document.getElementById("password").value = ""
+        }
+
+        function onEdit(td) {
+            selectedRow = td.parentElement.parentElement;
+
+            document.getElementById("name").value = selectedRow.cells[0].innerHTML
+            document.getElementById("number").value = selectedRow.cells[1].innerHTML
+            document.getElementById("email").value = selectedRow.cells[2].innerHTML
+            document.getElementById("address").value = selectedRow.cells[3].innerHTML
+            document.getElementById("aadhar").value = selectedRow.cells[4].innerHTML
+            document.getElementById("password").value = selectedRow.cells[5].innerHTML
+
+            myFunction()
+        }
+
+
+        function onUpdate(data) {
+            selectedRow.cells[0].innerHTML = data.name
+            selectedRow.cells[1].innerHTML = data.number
+            selectedRow.cells[2].innerHTML = data.email
+            selectedRow.cells[3].innerHTML = data.address
+            selectedRow.cells[4].innerHTML = data.aadhar
+            selectedRow.cells[5].innerHTML = data.password
+        }
+
+        function onClose(td) {
+            var selectedRow = td.parentElement.parentElement;
+            document.getElementById("delete").deleteRow(selectedRow.rowIndex)
+
+
+        }
+        let m = document.getElementById("file")
+        let n = document.getElementById("footer")
+        let o = document.getElementById("delete1")
+        let p = document.getElementById("form")
+
+        function myFunc() {
+
+            o.style.display = "block"
+            m.style.display = "none"
+            n.style.marginTop = "380px"
+        }
+        function backFunc1() {
+            o.style.display = "none"
+            m.style.display = "block"
+        }
+        function myFunction() {
+            o.style.display = "none"
+            p.style.display = "block"
+            n.style.marginTop = "10px"
+        }
+        function backFunc2() {
+            p.style.display = "none"
+            o.style.display = "block"
+        }
+        let d = document.getElementById("home")
+        d.addEventListener("click", () => {
+            window.location.href = "besant.html"
+        })
+
+
+    </script>
+</body>
+
+</html>
